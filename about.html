@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Fields of The World (FTW)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/ftw.ico" type="image/x-icon">
+    <style>
+        /* Basic Reset */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #2f3b32; /* Dark greenish brown for text */
+        background-color: #f9f5f0; /* Very light beige/brown background */
+    }
+    /* Header Styling */
+    header {
+        background: url('images/banner.png') no-repeat center center/cover;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(34, 55, 30, 0.3); /* Greenish overlay for better text contrast */
+        z-index: 1;
+    }
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 2;
+        text-shadow: 2px 2px 5px rgba(25, 35, 15, 0.7); /* Dark green shadow for readability */
+    }
+    header p {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 2;
+        text-shadow: 1px 1px 3px rgba(25, 35, 15, 0.5); /* Dark green shadow for readability */
+    }
+    /* Navigation Bar */
+    nav {
+        background: rgba(40, 55, 40, 0.8); /* Dark green with slight transparency */
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    nav ul li a:hover {
+        color: #cde0c1; /* Soft green hover color */
+    }
+    /* Section Styling */
+    section {
+        padding: 2rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #5f7f55; /* Green tone for headings */
+    }
+    section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        color: #5f7f55; /* Green tone for headings */
+    }
+    .content {
+        max-width: 900px;
+        margin: auto;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .content p {
+        margin-bottom: 1.5rem;
+    }
+    .content a {
+        color: #5f7f55; /* Muted green for links */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .content a:hover {
+        text-decoration: underline;
+    }
+    .content ul {
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+    }
+    .content ul li {
+        margin-bottom: 0.5rem;
+    }
+    /* Footer */
+    footer {
+        background: #2f3b32; /* Dark greenish brown for footer */
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          header h1 {
+              font-size: 2rem;
+          }
+          header p {
+              font-size: 1rem;
+          }
+          section {
+              padding: 1.5rem 1rem;
+          }
+      }
+  </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#ecosystem">Ecosystem</a></li>
+            <li><a href="index.html#get-started">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Fields of The World</h1>
+        <p>Learn more about the FTW ecosystem and initiative</p>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        <div class="content">
+            <h2>The FTW Initiative</h2>
+            <p>
+                The goal of Fields of The World (FTW) is to build a global field boundary dataset. The effort originally launched as a benchmark dataset, which is still the core of the effort. FTW has expanded into a full ecosystem supporting research, development, and deployment of geospatial workflows for the cloud. The effort is an open, community-driven initiative to advance global agricultural intelligence by building and sharing tools, datasets, and models for field boundary detection. Field boundaries was an obvious first focus area, and perhaps in the future the effort could go beyond boundaries.
+            </p>
+
+            <p>
+                Most countries don't have comprehensive maps of their agricultural fields, and even fewer have up-to-date information on what crops are growing or whether sustainable practices are being used. Our approach to solving this is to leverage Earth observation data and AI to automatically detect field boundaries at scale. By combining open satellite imagery with machine learning, we aim to build a global, open, and regularly updated map of the world's fields. The intention is that these field boundaries will enable better land use monitoring, food security efforts, and agricultural insights.
+            </p>
+
+            <p>
+                This GitHub organization contains all the code to download and use the FTW Benchmark Dataset, along with repositories that make it easy to run FTW and other field delineation models and generate field boundaries.
+            </p>
+
+            <h2>🔎 What's in the FTW Ecosystem?</h2>
+
+            <h3>🗂️ FTW Benchmark Dataset</h3>
+            <p>
+                Originally the core of the initiative, the FTW Benchmark Dataset is a global collection of labeled agricultural field boundaries, designed to benchmark model performance and support open research. It aggregates and harmonizes a number of open datasets into 1.6 million parcel boundaries and over 70,000 samples covering diverse agricultural landscapes across 4 continents and 24 countries. You can explore and download the dataset from <a href="https://source.coop/kerner-lab/fields-of-the-world" target="_blank">Source Cooperative</a>.
+            </p>
+
+            <p><strong>What's included in the FTW Benchmark Dataset?</strong></p>
+            <ul>
+                <li>Publicly available, labeled field boundaries from around the world</li>
+                <li>Uniform data formatting and metadata schema</li>
+                <li>A maintained subset of training/validation/test data</li>
+                <li>Tools to evaluate model performance on shared benchmarks</li>
+                <li>Contribution guidelines for submitting new datasets</li>
+            </ul>
+
+            <h3>🧠 FTW Baseline Models</h3>
+            <p>
+                Reference implementations of machine learning models trained on the FTW Benchmark Dataset. These models offer starting points and performance baselines for researchers and practitioners. Check out the baseline models at <a href="https://github.com/fieldsoftheworld/ftw-baselines/releases/tag/v1" target="_blank">github.com/fieldsoftheworld/ftw-baselines/releases/tag/v1</a>.
+            </p>
+
+            <h3>🛠️ FTW Tools</h3>
+            <p>A growing suite of tools to support end-to-end workflows:</p>
+            <ul>
+                <li><strong>Data access tools:</strong> CLI to download and work with the benchmark dataset (FTW CLI, which you can find in the <a href="https://github.com/fieldsoftheworld/ftw-baselines" target="_blank">ftw-baselines repository</a>)</li>
+                <li><strong>Inference tools:</strong> CLI to run field boundary detection on new imagery (FTW CLI, which you can find in the <a href="https://github.com/fieldsoftheworld/ftw-baselines" target="_blank">ftw-baselines repository</a>)</li>
+                <li><strong>Formatting tools:</strong> Resources to convert raw data into FTW-compliant format (e.g., fiboa to FTW train/test split) (fiboa CLI, which you can find in the <a href="https://github.com/fiboa/cli" target="_blank">fiboa/cli repository</a>)</li>
+                <li><strong>QGIS Plugin:</strong> A plugin to browse and interact with field data within QGIS. Currently in alpha (ftw-qgis-plugin)</li>
+            </ul>
+            <p>
+                The goal for both the tools and the web app is to make it easy to run a number of field boundary models, not just FTW baseline models or FTW benchmark data derived ones.
+            </p>
+
+            <h3>🌐 FTW Web App</h3>
+            <p>
+                A browser-based interface to easily run FTW models in any area of the world without running any code. Check out the <a href="https://fieldsofthe.world/ftw-inference-app" target="_blank">FTW Web App</a>.
+            </p>
+            <p>
+                Improvements to the web app are under progress. See the codebase for the app at ftw-inference-app.
+            </p>
+            <p>
+                The web app is powered by an API (see ftw-inference-api) and deployed to AWS via ftw-api-deployment.
+            </p>
+
+            <h3>🗺️ FTW Data Products</h3>
+            <p>
+                Large-scale outputs of model-inferred field boundaries (e.g., country-wide field maps). While no full-country maps have been published yet, efforts are currently underway in Kenya, Vietnam, Laos, Colombia, and other countries/regions. These outputs will be versioned and openly published to support external evaluation, planning, and downstream applications. As model quality improves, we aim to scale toward a global field boundary dataset.
+            </p>
+
+            <h2>Related Work</h2>
+
+            <h3>Field Boundaries for Agriculture (fiboa)</h3>
+            <p>
+                The <a href="https://source.coop/fiboa" target="_blank">Field Boundaries for Agriculture (fiboa)</a> project is focused on making field boundary data openly available in a unified format on a global scale.
+            </p>
+            <p>
+                Curated public datasets of field boundaries from government sources and hand-labeling campaigns, that may serve as inputs to the benchmark dataset. These are converted to the fiboa specification. Fiboa data can be found at <a href="https://source.coop/fiboa" target="_blank">https://source.coop/fiboa</a>.
+            </p>
+            <p>
+                The data found in the Source Cooperative kerner-lab organization are in the fiboa format.
+            </p>
+            <p>
+                In the future, FTW datasets may be sourced from the fiboa datasets prior to FTW subsetting and harmonization.
+            </p>
+
+            <h2>🤝 Get Involved</h2>
+            <p>We welcome contributions of:</p>
+            <ul>
+                <li>Field boundary datasets</li>
+                <li>Model improvements</li>
+                <li>Tool development</li>
+                <li>Promotion and educational materials (blog posts, documentation, talks, papers, social media)</li>
+                <li>Feedback and ideas</li>
+            </ul>
+
+            <p><strong>Ways to engage:</strong></p>
+            <ul>
+                <li>🧑‍💻 Check out our repositories</li>
+                <li>📬 Follow the journey by joining the 'ftw-community' Google Group</li>
+                <li>🌐 Join the working team meetings by joining the 'ftw-team' Google Group</li>
+            </ul>
+
+            <p><strong>Regular Meetings:</strong></p>
+            <ul>
+                <li><strong>FTW General Progress Meeting</strong> every 2 weeks on Thursday @ 8am PT | 9am MT | 10am CT | 11am ET</li>
+                <li><strong>Scaling FTW Meeting</strong> every 2 weeks on Tuesday @ 8am PT | 9am MT | 10am CT | 11am ET</li>
+            </ul>
+
+            <p>
+                You can also suggest new datasets to add in the <a href="https://github.com/fieldsoftheworld/ftw-datasets-list" target="_blank">ftw-datasets-list issue tracker</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Fields of The World Project. All rights reserved.
+    </footer>
+
+</body>
+</html>

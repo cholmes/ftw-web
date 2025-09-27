@@ -172,57 +172,59 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Key Features</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#ecosystem">Ecosystem</a></li>
             <li><a href="#get-started">Get Started</a></li>
-            <li><a href="#why">Why?</a></li>
-            <li><a href="#contributing">Contributing</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
     <!-- Header Section -->
     <header>
         <h1>Fields of The World (FTW)</h1>
-        <p>A Comprehensive Benchmark Dataset for Agricultural Field Boundaries</p>
+        <p>Building a Global Field Boundary Dataset</p>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About</h2>
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
         <div class="content" style="display: flex; align-items: flex-start; margin-top: -20px; text-align: left;">
-            <img src="images/logo.jpg" alt="Logo" style="width: 160px; height: auto; margin-right: 30px;"> <!-- Updated logo spacing -->
+            <img src="images/logo.jpg" alt="Logo" style="width: 160px; height: auto; margin-right: 30px;">
             <div>
                 <p>
-                    <strong>Fields of The World (FTW)</strong> is a comprehensive benchmark dataset designed to enhance the development of machine learning models for instance segmentation of agricultural field boundaries. It aggregates and harmonizes a number of open datasets into 1.6 million parcel boundaries and over 70,000 samples covering diverse agricultural landscapes across 4 continents and 27 countries.
+                    <strong>Fields of The World (FTW)</strong> is an open, community-driven initiative to advance global agricultural intelligence by building and sharing tools, datasets, and models for field boundary detection. Most countries don't have comprehensive maps of their agricultural fields, and even fewer have up-to-date information on what crops are growing or whether sustainable practices are being used.
                 </p>
-                <p><a href="#">Learn more</a></p>
+                <p>
+                    Our approach leverages Earth observation data and AI to automatically detect field boundaries at scale. By combining open satellite imagery with machine learning, we aim to build a global, open, and regularly updated map of the world's fields.
+                </p>
+                <p><a href="about.html">Learn more about the FTW ecosystem</a></p>
             </div>
         </div>
     </section>
 
-        <!-- Key Features Section -->
-        <section id="features">
-          <h2>Key Features</h2>
+        <!-- FTW Ecosystem Section -->
+        <section id="ecosystem">
+          <h2>🔎 What's in the FTW Ecosystem?</h2>
           <div class="features">
               <div class="feature-item">
-                  <img src="images/global.png" alt="Global Coverage Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;"> <!-- Updated icon -->
-                  <h3>Global Coverage</h3>
+                  <img src="images/global.png" alt="Dataset Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+                  <h3>🗂️ Benchmark Dataset</h3>
                   <p>
-                      The extensive geographic coverage and large amount of data allows for the development of models that can generalize well to different agricultural practices and field types.
+                      A global collection of labeled agricultural field boundaries with 1.6 million parcel boundaries across 4 continents and 24 countries, designed to benchmark model performance.
                   </p>
               </div>
               <div class="feature-item">
-                  <img src="images/ml.png" alt="ML-Ready Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;"> <!-- Updated icon -->
-                  <h3>User-Friendly</h3>
+                  <img src="images/ml.png" alt="Models Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+                  <h3>🧠 Baseline Models</h3>
                   <p>
-                      The dataset is well-structured with great documentation and tools so that any AI/ML researcher can immediately experiment and build models, even without geospatial expertise.
+                      Reference implementations of machine learning models trained on the FTW dataset, offering starting points and performance baselines for researchers.
                   </p>
               </div>
               <div class="feature-item">
-                  <img src="images/open.png" alt="Open Ecosystem Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;"> <!-- Updated icon -->
-                  <h3>An Open Ecosystem</h3>
+                  <img src="images/open.png" alt="Tools Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+                  <h3>🛠️ Tools & Web App</h3>
                   <p>
-                      FTW is built with a number of open building blocks so that it is easy for a variety of individuals and organizations to contribute their data, software, compute, and expertise.
+                      A growing suite of CLI tools, QGIS plugins, and a browser-based interface to easily run FTW models anywhere in the world without coding.
                   </p>
               </div>
           </div>
@@ -235,35 +237,16 @@
             <div class="cta-buttons">
                 <a href="#">Read the Paper</a>
                 <a href="https://github.com/fieldsoftheworld/ftw-baselines" target="_blank">Start Experimenting</a>
-                <a href="https://beta.source.coop/repositories/kerner-lab/fields-of-the-world/description/" target="_blank">Get the Data</a>
+                <a href="https://source.coop/kerner-lab/fields-of-the-world" target="_blank">Get the Data</a>
+                <a href="https://fieldsofthe.world/ftw-inference-app" target="_blank">Try the Web App</a>
             </div>
         </div>
     </section>
 
-    <!-- Why Section -->
-    <section id="why">
-      <h2>Why?</h2>
-      <div class="content">
-          <p>
-              There is a growing need for accurate and scalable field boundary data for global agricultural monitoring and assessments. Traditional data collection has not met that need, but there is large potential to use AI & Earth Observation Imagery to meet the demand. Fields of the World aims to be an "ImageNet for Fields" by creating a foundational dataset that spurs on a greater ecosystem of collaboration.
-          </p>
-      </div>
-  </section>
-
-    <!-- Contributing Section -->
-    <section id="contributing">
-        <h2>Contributing</h2>
-        <div class="content">
-            <p>
-                We welcome contributions from the community! Our goal is to create an open, collaborative ecosystem where we all work together to advance a commons of data, models, benchmarks and software for agricultural insights.
-            </p>
-            <p><a href="#">Find out how to contribute</a></p>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
-        &copy; 2023 Fields of The World Project. All rights reserved.
+        &copy; 2024 Fields of The World Project. All rights reserved.
     </footer>
 
 </body>
